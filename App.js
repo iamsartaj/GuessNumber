@@ -23,7 +23,6 @@ export default function App() {
         source={require('./assets/Pic.jpg')}
         resizeMode='cover'
         style={styles.rootScreen}
-        imageStyle={styles.backgroundImage}
       >
       {screen}
       </ImageBackground>
@@ -35,8 +34,4 @@ const styles = StyleSheet.create({
   rootScreen: {
     flex: 1,
   },
-  backgroundImage: {
-    opacity: 0.15,
-  }
-  
 });
