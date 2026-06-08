@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     numberText: {
-        color: Colors.primary2,
+        color: Colors.primary1,
         fontSize: 36,
         fontWeight: 'bold',
     }
