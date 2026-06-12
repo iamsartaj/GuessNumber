@@ -5,6 +5,7 @@ import GameScreen from './screens/GameScreen';
 import GameOverScreen from './screens/GameOver';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -56,6 +57,8 @@ export default function App() {
 
   return (
     // <SafeAreaView style={styles.rootScreen}>
+    <>
+    <StatusBar style='light'/>
       <ImageBackground 
         source={require('./assets/Pic.jpg')}
         resizeMode='cover'
@@ -64,6 +67,7 @@ export default function App() {
       >
       {screen}
       </ImageBackground>
+      </>
     // </SafeAreaView>
   );
 }
